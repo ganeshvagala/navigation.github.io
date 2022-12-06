@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Ganesh Vagala</title>
+    <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+        <nav>
+                <label class="logo">THeDYNAMIc</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="sec1"></div>
+        <h1>FLY</h1>
+        <p>“The truth is you don’t know what is going to happen tomorrow. Life is a crazy ride, and nothing is guaranteed.”</p>
+        <div class="sec2"></div>
+        <h1>VIBE</h1>
+        <p> “I say what I want to say and do what I want to do. There’s no in between. People will either love you for it or hate you for it.”</p>
+        <script>
+            var scroll1=window.pageYOffset;
+            window.onescroll=function(){
+                var scroll2=window.pageYOffset;
+                if(scroll1>scroll2){
+                 document.querySelector('nav').style.top="0";
+                }else{
+                    document.querySelector('nav').style.top="-100";
+                }
+                scroll1=scroll2;
+            }
+        </script>
+    </body>
+</html>
